@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Brew Haven ☕
 
-## Getting Started
+A modern and responsive coffee shop landing page built with **Next.js** and **Tailwind CSS**. Brew Haven showcases a premium café experience with elegant design, smooth navigation, and mobile-first responsiveness.
 
-First, run the development server:
+## ✨ Features
+
+* Responsive design for all devices
+* Sticky navigation bar
+* Hero section with call-to-action buttons
+* Featured menu cards
+* Customer testimonials
+* About and contact sections
+* Smooth scrolling experience
+* SEO-friendly structure
+* Modern UI with reusable components
+
+## 🛠️ Tech Stack
+
+* Next.js
+* React
+* Tailwind CSS
+* Lucide React Icons
+* AOS (Animate On Scroll)
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+app/
+components/
+public/
+styles/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone <repository-url>
+cd brew-haven
+npm install
+npm run dev
+```
 
-## Learn More
+Open `http://localhost:3000` in your browser to view the application.
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Purpose
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project was created to practice modern web development and demonstrate the ability to build visually appealing business landing pages using contemporary frontend technologies.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📜 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the MIT License.
