@@ -23,9 +23,9 @@ const Navbar = () => {
         />
       </button>
       <nav
-        className={`w-full h-screen  py-20 fixed top-0 shadow-md z-100 bg-background/50 grid grid-cols-2 grid-rows-4 md:px-8 md:items-center md:justify-items-center   md:translate-x-0 md:transform-none md:min-w-full  md:h-20  md:py-0 md:grid   md:grid-cols-3 md:grid-rows-1    md:sticky   transform duration-300 transition-all   ${state ? "translate-x-0" : "-translate-x-full"}`}
+        className={`w-full h-screen  py-20 fixed top-0 shadow-md z-100 bg-background/50 grid grid-cols-2 grid-rows-4 md:px-8 md:items-center md:justify-items-center   md:translate-x-0 md:transform-none md:min-w-full  md:h-20  md:py-0 md:grid   md:grid-cols-3 md:grid-rows-1    md:fixed   transform duration-300 transition-all   ${state ? "translate-x-0" : "-translate-x-full"}`}
       >
-        <div className="col-start-1 col-end-2  justify-self-center">
+        <div className="col-start-1 col-end-2  justify-self-center ">
           <Image
             src="/logo.png"
             width={100}
@@ -41,7 +41,7 @@ const Navbar = () => {
             <Link
               key={idx}
               href={`${e.link}`}
-              className={` ${inter.variable} text-primary`}
+              className={` ${inter.variable} text-primary transform duration-150 transition-transform hover:scale-110 `}
               onClick={() => setState(false)}
             >
               {e.item}
@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className={`col-start-2 col-end-3 md:col-start-3 md:col-end-4`}>
           <SearchBar
             searchTerm="Cappucino"
-            classes="w-40"
+            classes="w-30"
           />
         </div>
       </nav>

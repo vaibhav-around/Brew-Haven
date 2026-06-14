@@ -10,9 +10,9 @@ const SearchBar = ({searchTerm, classes }: {searchTerm: string, classes?: string
         inputRef.current?.focus();
     }
   return (
-    <div className={`md:w-40 flex flex-row items-center justify-start gap-2 p-2 border rounded-md focus-within:outline focus-within:outline-green-400 ${classes}`} >
+    <div className={`w-20 md:w-40  flex flex-row items-center justify-start gap-2 p-2 border rounded-md focus-within:outline focus-within:outline-green-400 ${classes} overflow-hidden`} >
         <Search size="20" className='shrink-0 ' absoluteStrokeWidth onClick={handleClickIcon} />
-        <input ref={inputRef || undefined} type="text" className='outline-none placeholder:text-sm md:placeholder:text-md' placeholder={searchTerm} value={search || ""} onChange={e => setSearch(e.target.value)}/>
+        <input ref={inputRef || undefined} type="text" className='outline-none placeholder:text-sm placeholder:text-primary md:placeholder:text-md w-20' placeholder={searchTerm} value={search || ""} onChange={e => setSearch(e.target.value)}/>
     </div>
   )
 }

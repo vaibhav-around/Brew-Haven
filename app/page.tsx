@@ -6,13 +6,13 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 export default function Home() {
   return (
-    <div className="relative z-0  pt-24 bg-blue-100 ">
+    <main className="relative top-0 z-0  bg-blue-100 ">
       <Hero />
       <Features />
       <Menu />
       <Testimonials />
       <About />
       <Contact />
-    </div>
+    </main>
   );
 }
