@@ -6,7 +6,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 export default function Home() {
   return (
-    <main className="relative top-0 z-0  bg-blue-100 ">
+    <main className="relative top-0 z-0 ">
       <Hero />
       <Features />
       <Menu />

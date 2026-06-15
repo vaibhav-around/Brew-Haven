@@ -2,10 +2,11 @@ import React from "react";
 import Image from "next/image";
 import { poppins } from "../fonts/fonts";
 import { heroSectionData } from "../lib/placeholder-data";
+import * as motion from "motion/react-client";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full relative">
+    <div className="h-screen w-full relative overflow-hidden">
       
       <Image
         src={"/assets/brew-haven-bg.png"}
@@ -23,7 +24,13 @@ const Hero = () => {
         loading="lazy"
         className="w-full h-full object-cover md:hidden z-0"
       />
-      <div className="absolute inset-0 bg-transparent flex flex-col gap-4 items-start justify-center md:pl-32 pl-10">
+      <motion.div
+      initial={{ left: -100}}
+      animate={{ left: 1}}
+      transition={{
+        duration: 0.54
+      }}
+      className="absolute inset-0 bg-transparent flex flex-col gap-4 items-start justify-center md:pl-32 pl-10">
         <h1 className={`${poppins.className} text-4xl text-primary `}>{heroSectionData.heading[0]}</h1>
         <p className="text-secondary text-sm">{heroSectionData.subHeading[0]}</p>
         
@@ -33,7 +40,7 @@ const Hero = () => {
           ))
         }
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
